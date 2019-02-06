@@ -147,13 +147,17 @@
 			<h2>Contact Andrew Webb</h2>
 			<p>Don't be shy...</p>
 		</header>
-		<form method="post" action="#">
+		<form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true" action="#">
+		<p class="hidden">
+    <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+  </p>
 			<div class="row gtr-50">
 				<div class="col-6 col-12-mobile"><input type="text" class="text" name="name" placeholder="Name" /></div>
 				<div class="col-6 col-12-mobile"><input type="text" class="text" name="email" placeholder="Email" /></div>
 				<div class="col-12">
 					<textarea name="message" placeholder="Message"></textarea>
 				</div>
+				<div data-netlify-recaptcha="true" ></div>			
 				<div class="col-12">
 					<ul class="actions">
 						<li><input type="submit" value="Send Message" /></li>
@@ -312,9 +316,9 @@
 			</article>
 		-->
 
+
 	<section id="footer">
 		<ul class="icons">
-
 
 			<li><a target="_blank" href="https://github.com/andrewwebbdeveloper" class="icon fa-github"><span class="label">Github</span></a></li>
 
