@@ -1891,10 +1891,7 @@ input, select, textarea {
 				overflow: hidden;
 				transition: all .2s ease-in-out;
 			}
-			.box.style1 .image:hover {
-				z-index: 20;
-				transform: scale(1.05); 
-			}
+			
 
 				.box.style1 .image img {
 					display: block; 
