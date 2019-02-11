@@ -373,10 +373,12 @@ br.clear {
   z-index: 2001;
 
   height: 3rem;
-  width: 10rem;
+  width: 7rem;
   border-radius: 10rem;
   background-image: linear-gradient(to top, #a4c7ba, var(--primary-color));
   box-shadow: 0.1rem 0.1rem 3rem 0.1rem #000000;
+  transition: all 0.2s ease-in-out;
+
   transform: scale(1.01);
 }
 .cta__button:active {
@@ -395,12 +397,17 @@ br.clear {
   z-index: 2001;
 
   height: 3rem;
-  width: 10rem;
+  width: 7rem;
   border-radius: 10rem;
   background-image: linear-gradient(to top, #a4c7ba, var(--primary-color));
   box-shadow: 0.1rem 0.1rem 3rem 0.1rem #000000;
+  transition: all 0.2s ease-in-out;
   transform: scale(1.01);
-  transform: translate(-11rem, -3rem);
+  transform: translate(-8rem, -3rem);
+}
+.cta__button:hover,
+.resume__button:hover {
+  background: #45c89f;
 }
 /* Container */
 
